@@ -33,6 +33,12 @@ public class Rang {
             prefix = "§b§lElite";
         }else if(rang.equalsIgnoreCase("donator")){
             prefix = "§eDonator";
+        }else if(rang.equalsIgnoreCase("freund")){
+            prefix = "§9Freund/in";
+        }else if(rang.equalsIgnoreCase("youtuber")){
+            prefix = "§cYTer";
+        }else if(rang.equalsIgnoreCase("streamer")){
+            prefix = "§dStreamer";
         }else if(rang.equalsIgnoreCase("azubi")){
             prefix = "§1Azubi";
         }else if(rang.equalsIgnoreCase("supporter")){
@@ -85,6 +91,12 @@ public class Rang {
             suffix = "§b§lElite";
         }else if(rang.equalsIgnoreCase("donator")){
             suffix = "§eDonator";
+        }else if(rang.equalsIgnoreCase("freund")){
+            suffix = "§9Freund/in";
+        }else if(rang.equalsIgnoreCase("youtuber")){
+            suffix = "§cYTer";
+        }else if(rang.equalsIgnoreCase("streamer")){
+            suffix = "§dStreamer";
         }else if(rang.equalsIgnoreCase("azubi")){
             suffix = "§1Azubi";
         }else if(rang.equalsIgnoreCase("supporter")){
@@ -113,28 +125,34 @@ public class Rang {
     public static String getGroupNumber(String group) {
         String number = "0001";
         if (group.equalsIgnoreCase("spieler")) {
-            number = "0023";
+            number = "0025";
         } else if (group.equalsIgnoreCase("mitglied")) {
-            number = "0022";
+            number = "0024";
         } else if (group.equalsIgnoreCase("premium")) {
-            number = "0021";
+            number = "0023";
         } else if (group.equalsIgnoreCase("obsidian")) {
-            number = "0020";
+            number = "0022";
         } else if (group.equalsIgnoreCase("titan")) {
-            number = "0019";
+            number = "0021";
         } else if (group.equalsIgnoreCase("bedrock")) {
-            number = "0018";
+            number = "0020";
         } else if (group.equalsIgnoreCase("legende")) {
-            number = "0017";
+            number = "0019";
         } else if (group.equalsIgnoreCase("phoenix")) {
+            number = "0018";
+        } else if (group.equalsIgnoreCase("vip")) {
+            number = "0017";
+        } else if (group.equalsIgnoreCase("vip")) {
             number = "0016";
-        } else if (group.equalsIgnoreCase("vip")) {
-            number = "0014";
-        } else if (group.equalsIgnoreCase("vip")) {
-            number = "0013";
         } else if (group.equalsIgnoreCase("elite")) {
-            number = "0012";
+            number = "0015";
         } else if (group.equalsIgnoreCase("donator")) {
+            number = "0014";
+        }else if(group.equalsIgnoreCase("freund")){
+            number= "0013";
+        }else if(group.equalsIgnoreCase("youtuber")){
+            number = "0012";
+        }else if(group.equalsIgnoreCase("streamer")){
             number = "0011";
         } else if (group.equalsIgnoreCase("azubi")) {
             number = "0010";
@@ -163,49 +181,55 @@ public class Rang {
     public static String getTeamNumber(String uuid){
         String number = "0001";
         String rang = MySQL.getRang(uuid);
-        if(rang.equalsIgnoreCase("spieler")){
+        if (rang.equalsIgnoreCase("spieler")) {
+            number = "0025";
+        } else if (rang.equalsIgnoreCase("mitglied")) {
+            number = "0024";
+        } else if (rang.equalsIgnoreCase("premium")) {
             number = "0023";
-        }else if(rang.equalsIgnoreCase("mitglied")){
+        } else if (rang.equalsIgnoreCase("obsidian")) {
             number = "0022";
-        }else if(rang.equalsIgnoreCase("premium")){
+        } else if (rang.equalsIgnoreCase("titan")) {
             number = "0021";
-        }else if(rang.equalsIgnoreCase("obsidian")){
+        } else if (rang.equalsIgnoreCase("bedrock")) {
             number = "0020";
-        }else if(rang.equalsIgnoreCase("titan")){
+        } else if (rang.equalsIgnoreCase("legende")) {
             number = "0019";
-        }else if(rang.equalsIgnoreCase("bedrock")){
+        } else if (rang.equalsIgnoreCase("phoenix")) {
             number = "0018";
-        }else if(rang.equalsIgnoreCase("legende")){
+        } else if (rang.equalsIgnoreCase("vip")) {
             number = "0017";
-        }else if(rang.equalsIgnoreCase("phoenix")){
+        } else if (rang.equalsIgnoreCase("vip")) {
             number = "0016";
-        }else if(rang.equalsIgnoreCase("vip")){
+        } else if (rang.equalsIgnoreCase("elite")) {
+            number = "0015";
+        } else if (rang.equalsIgnoreCase("donator")) {
             number = "0014";
-        }else if(rang.equalsIgnoreCase("vip")){
-            number = "0013";
-        }else if(rang.equalsIgnoreCase("elite")){
+        }else if(rang.equalsIgnoreCase("freund")){
+            number= "0013";
+        }else if(rang.equalsIgnoreCase("youtuber")){
             number = "0012";
-        }else if(rang.equalsIgnoreCase("donator")){
+        }else if(rang.equalsIgnoreCase("streamer")){
             number = "0011";
-        }else if(rang.equalsIgnoreCase("azubi")){
+        } else if (rang.equalsIgnoreCase("azubi")) {
             number = "0010";
-        }else if(rang.equalsIgnoreCase("supporter")){
+        } else if (rang.equalsIgnoreCase("supporter")) {
             number = "0009";
-        }else if(rang.equalsIgnoreCase("builder")){
+        } else if (rang.equalsIgnoreCase("builder")) {
             number = "0008";
-        }else if(rang.equalsIgnoreCase("testmoderator")){
+        } else if (rang.equalsIgnoreCase("testmoderator")) {
             number = "0007";
-        }else if(rang.equalsIgnoreCase("moderator")){
+        } else if (rang.equalsIgnoreCase("moderator")) {
             number = "0006";
-        }else if(rang.equalsIgnoreCase("testdeveloper")){
+        } else if (rang.equalsIgnoreCase("testdeveloper")) {
             number = "0005";
-        }else if(rang.equalsIgnoreCase("developer")){
+        } else if (rang.equalsIgnoreCase("developer")) {
             number = "0004";
-        }else if(rang.equalsIgnoreCase("testadministrator")){
+        } else if (rang.equalsIgnoreCase("testadministrator")) {
             number = "0003";
-        }else if(rang.equalsIgnoreCase("administrator")){
+        } else if (rang.equalsIgnoreCase("administrator")) {
             number = "0002";
-        }else if(rang.equalsIgnoreCase("owner")){
+        } else if (rang.equalsIgnoreCase("owner")) {
             number = "0001";
         }
 

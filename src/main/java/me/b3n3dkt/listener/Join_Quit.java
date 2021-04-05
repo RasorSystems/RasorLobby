@@ -34,6 +34,7 @@ public class Join_Quit implements Listener {
         event.setJoinMessage("§8[§a+§8] §7" + player.getName());
         if (MySQL.isRegistered(player.getUniqueId().toString()) != true) {
             MySQL.register(player);
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + player.getName() + " group add spieler");
         }
 
         for(int i = 0; i < 200; ++i) {
