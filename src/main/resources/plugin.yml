@@ -1,0 +1,15 @@
+name: JailedMCLobby
+author: b3n3dkt
+version: 1.0.0
+main: me.b3n3dkt.Lobby
+api-version: 1.8
+depend: [SkyRasorCore, Votifier, ProtocolLib]
+
+commands:
+   fly:
+   gamemode:
+     aliases: [gm]
+   money:
+   eco:
+   rang:
+   pay:

@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JailedRp_Lobby:jar2">
+    <output-path>A:/Development/Servers/Server 1.16.5/plugins/artifacts/JailedRp_Lobby_jar2</output-path>
+    <root id="archive" name="JailedRp_Lobby.jar" />
+  </artifact>
+</component>
